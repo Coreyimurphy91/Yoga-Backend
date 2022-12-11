@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const { Schema } = mongoose;
+const routineSchema = require('./routine.js');
 
 const userSchema = new Schema({
     name: {
@@ -10,6 +11,10 @@ const userSchema = new Schema({
         type: String,
         required: true
     },
+    selfDescription: {
+        type: String,
+        default: 'Yoga Flow Creater'
+    },
     password: {
         type: String,
         required: true,
@@ -18,7 +23,8 @@ const userSchema = new Schema({
     date: {
         type: Date,
         default: Date.now()
-    }
+    },
+    routines: [routineSchema]
 })
 
 const User = mongoose.model('User', userSchema);

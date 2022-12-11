@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
 const { Schema } = mongoose;
+const poseSchema = require('./pose.js')
 
-const routineSchema = new Schema({
+module.exports = new Schema({
     name: {
         type: String,
         required: true
@@ -10,12 +11,5 @@ const routineSchema = new Schema({
         type: Number,
         required: true
     },
-    poses: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref:'pose'
-    },
+    poses:[poseSchema]
 })
-
-const Routine = mongoose.model('Routine', routineSchema);
-
-module.exports = Routine;
