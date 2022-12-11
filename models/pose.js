@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 const tagSchema = require('./tag.js')
 
-module.exports = new Schema({
+const poseSchema = new Schema({
     name: {
         type: String,
         required: true
@@ -13,11 +13,15 @@ module.exports = new Schema({
     },
     difficulty: {
         type: Number,
-        required:  true
+        required:  true,
+        min: 1,
+        max: 5
     },
     time: {
         type: Number,
-        required: true
+        required: true,
+        min: 1,
+        default: 15
     },
     imageURL: {
         type: String,
@@ -26,3 +30,7 @@ module.exports = new Schema({
     tags: 
         [tagSchema]
 })
+
+const Pose = mongoose.model('Pose', poseSchema);
+
+module.exports = Pose;

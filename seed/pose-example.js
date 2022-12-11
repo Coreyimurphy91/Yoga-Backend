@@ -1,10 +1,33 @@
 const Pose = require('../models/pose');
+const mongoose = require('mongoose');
 
 const poses = [
-  { name: 'Warrior 1', completed: true}, 
-  { body: 'Warrior 2', completed: false}
+  { 
+    name: 'Warrior 1', 
+    description: 'be a frickin warrior',
+    difficulty: 1,
+    time: 10,
+    imageURL: 'testurl',
+    // tags: 'standing'
+  }, 
+  { 
+    name: 'Warrior 2', 
+    description: 'be a frockon warrior',
+    difficulty: 1,
+    time: 10,
+    imageURL: 'testurl2',
+    // tags: 'standing'
+  }, 
 ];
-const onePose = { name: 'Warrior 3', completed: true };
+
+const onePose =   { 
+    name: 'Warrior 3', 
+    description: 'be a fruckun warrior',
+    difficulty: 1,
+    time: 10,
+    imageURL: 'testurl',
+    // tags: 'standing'
+  } ;
 
 
 const addManyPoses = async () => {
@@ -21,4 +44,4 @@ const addOnePose = async () => {
 
 // run the functions
 // addManyPoses();
-// addOnePose();
+addOnePose();
