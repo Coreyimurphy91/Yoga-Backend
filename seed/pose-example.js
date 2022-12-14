@@ -56,6 +56,9 @@ const tags = [
     name: 'seated'
   },
   {
+    name: 'shoulders'
+  },
+  {
     name: 'standing'
   },
   {
@@ -124,28 +127,60 @@ const tags = [
         tags: newTags.filter(t => t.name === 'standing' || t.name === 'balance' || t.name === 'core' || t.name === 'strength' || t.name === 'chest opener')
       }, 
       { 
+        name: 'Butterfly', 
+        description: 'Butterfly pose, or Citrapataṅgaḥ in Sanskrit, is a restful seated pose. From a seated position, bring the soles of the feet together and slide them away from the groin to form a diamond shape. Hinge forward and bring the forehead towards the heels, allowing the back to round. Hands can rest on your feet or on the floor. Allow your neck to relax and close your eyes, and breathe. A block can be placed between the feet to rest the forehead on.',
+        difficulty: 1,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/butterfly.png',
+        tags: newTags.filter(t => t.name === 'seated' || t.name === 'stretch-back')
+      }, 
+      { 
+        name: 'Caterpillar', 
+        description: 'Catterpillar pose, or Bisa in Sanskrit, is a restful seated stretch. Begin in a seated position with your legs straight in front. Fold forward over the legs, allowing the back to round. Hands can be on the floor, or may catch your shins, ankles, or toes. Sit on a blanket to support this pose if needed.',
+        difficulty: 1,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/caterpillar.png',
+        tags: newTags.filter(t => t.name === 'seated' || t.name === 'stretch-back')
+      }, 
+      { 
+        name: 'Easy Seat', 
+        description: 'Easy seat pose, or Sukhasana in Sanskrit, is a neutral seated posture. From a seated position, bring your knees into a simple cross legged pose. Both knees should be below the hips. Place the hands on the thighs or knees and keep the spine straight.',
+        difficulty: 1,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/easy.png',
+        tags: newTags.filter(t => t.name === 'seated' || t.name === 'stretch-back')
+      }, 
+      { 
         name: 'Revolved Bird of Paradise', 
         description: 'Revolved bird of paradise pose, or Parivritta Svarga Dvijasana in Sanskrit, is a challenging variation of bird of paradise. The lower arm reaches back around the legs as the upper arm wraps around the back and the fingers of the respective hands eventually meet and interlace. One foot stays rooted into the earth and straightens while the opposite leg comes up with a bent knee. Once you are standing upright extend the leg toward the sky. The ribcage is lifted and the heart is open in the full expression of the pose. The gaze is forward.',
         difficulty: 3,
         time: 15,
         imageURL: 'https://pocketyoga.com/assets/images/full/bird_of_paradise_revolved_R.png',
-        tags: newTags.filter(t => t.name === 'standing' || t.name === 'balance' || t.name === 'core' || t.name === 'strength')
+        tags: newTags.filter(t => t.name === 'standing' || t.name === 'balance' || t.name === 'core' || t.name === 'stretch-core' || t.name === 'strength')
       }, 
       { 
         name: 'Crescent Lunge', 
         description: 'Crescent lunge pose, or Ashta Chandrasana in Sanskrit, is a standing posture that strengthens the legs and opens the chest. The front foot of one leg is rooted on the earth with the knee directly above and tracking the ankle in a 90-degree angle. The back leg is straight, no bend in the knee, and the weight is distributed backwards onto the toes as the back heel pushes back and down toward the earth. The inner thighs scissor toward each other and the pelvis is tucked under with the ribcage lifted and the chin slightly tucked. The spine is long and extended. The heart is open. The arms are straight with no bend in the elbows or the wrists. The hands can be together or separated and facing each other with the fingers spread wide. Gaze is natural and forward.',
-        difficulty: 1,
+        difficulty: 2,
         time: 15,
         imageURL: 'https://pocketyoga.com/assets/images/full/lunge_crescent_L.png',
-        tags: newTags.filter(t => t.name === 'standing' || t.name === 'balance' || t.name === 'core' || t.name === 'strength')
+        tags: newTags.filter(t => t.name === 'standing' || t.name === 'balance' || t.name === 'core' || t.name === 'stretch-legs')
       }, 
       { 
         name: 'Crescent Lunge on the Knee', 
-        description: 'Crescent lunge on the knee pose, or Anjaneyasana in Sanskrit, is a half-kneeling posture that strengthens the legs and opens the chest. The front knee is bent in a 90-degree angle directly above the ankle and the back knee is resting on the earth with the top of the back foot pressed firmly into the earth. The hips are squared and pressed forward. The inner thighs scissor toward each other. The pelvis is tucked under to protect the low back. The ribcage is lifted. The arms are lifted. The hands can be together or separated and facing each other with the fingers spread wide. The gaze is forward.',
+        description: 'Crescent lunge on the knee pose, or Anjaneyasana in Sanskrit, is a half-kneeling variation of crescent lunge that strengthens the legs and opens the chest. The front knee is bent in a 90-degree angle directly above the ankle and the back knee is resting on the earth with the top of the back foot pressed firmly into the earth. The hips are squared and pressed forward. The inner thighs scissor toward each other. The pelvis is tucked under to protect the low back. The ribcage is lifted. The arms are lifted. The hands can be together or separated and facing each other with the fingers spread wide. The gaze is forward.',
         difficulty: 1,
         time: 15,
-        imageURL: 'https://pocketyoga.com/assets/images/full/lunge_crescent_L.png',
-        tags: newTags.filter(t => t.name === 'standing' || t.name === 'balance' || t.name === 'core' || t.name === 'strength')
+        imageURL: 'https://pocketyoga.com/assets/images/full/warrior_i_kneeling_L.png',
+        tags: newTags.filter(t => t.name === 'standing' || t.name === 'balance' || t.name === 'core' || t.name === 'stretch-legs' || t.name === 'shoulders')
+      }, 
+      { 
+        name: 'Standing Crescent Moon', 
+        description: 'Crescent moon, or indudalasana in Sanskrit, is a standing posture that lengthens the rib cage. From mountain with arms up pose, extend upwards toward the sky as you bend to one side, lengthening the opposite side of the rib cage and stretch.',
+        difficulty: 1,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/crescent_moon_R.png',
+        tags: newTags.filter(t => t.name === 'standing' || t.name === 'balance' || t.name === 'stretch-core')
       }, 
     ];
     const addManyPoses = async () => {
