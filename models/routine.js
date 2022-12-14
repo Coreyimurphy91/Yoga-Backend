@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 const poseSchema = require('./pose.js')
 
-module.exports = new Schema({
+const routineSchema = new Schema({
     name: {
         type: String,
         required: true
@@ -11,5 +11,12 @@ module.exports = new Schema({
         type: Number,
         required: true
     },
-    poses:[poseSchema]
+    poses:[{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Pose'
+    }]
 })
+
+const Routine = mongoose.model('Routine', routineSchema);
+
+module.exports = Routine;

@@ -28,7 +28,10 @@ const poseSchema = new Schema({
         required: true
     },
     tags: 
-        [tagSchema]
+    [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Tag'
+    }]
 })
 
 const Pose = mongoose.model('Pose', poseSchema);
