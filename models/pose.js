@@ -15,7 +15,7 @@ const poseSchema = new Schema({
         type: Number,
         required:  true,
         min: 1,
-        max: 3
+        max: 4
     },
     time: {
         type: Number,

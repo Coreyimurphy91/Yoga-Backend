@@ -77,6 +77,9 @@ const tags = [
     name: 'stretch-legs'
   },
   {
+    name: 'stretch-side'
+  },
+  {
     name: 'supine'
   },
   {
@@ -279,7 +282,23 @@ const tags = [
         difficulty: 2,
         time: 15,
         imageURL: 'https://pocketyoga.com/assets/images/full/dolphin.png',
-        tags: newTags.filter(t => t.name === 'core' || t.name === 'forward-bend' || t.name === 'shoulders' || t.name === 'strength')
+        tags: newTags.filter(t => t.name === 'core' || t.name === 'forward-bend' || t.name === 'shoulders' || t.name === 'strength' || t.name === 'stretch-legs')
+      },
+      { 
+        name: 'Downward-facing Dog', 
+        description: 'Downward-facing dog pose, or Adho Mukha Shvanasana in Sanskrit, is an arm and leg supported pose. The body is positioned in an inverted "V" with the palms and feet rooted into the earth and sits bones lifted up toward the sky. The arms and legs are straight. The weight of the body is equally distributed between the hands and the feet. The eye of the elbows face forward. The ribcage is lifted and the heart is open. Shoulders are squared to the earth and rotated back, down and inward. The neck is relaxed and the crown of the head is toward the earth. The gaze is down and slightly forward.',
+        difficulty: 1,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/downward_dog.png',
+        tags: newTags.filter(t => t.name === 'core' || t.name === 'forward-bend' || t.name === 'shoulders' || t.name === 'strength' || t.name === 'stretch-legs')
+      },
+      { 
+        name: 'Eagle', 
+        description: 'Eagle pose, or Garudasana in Sanskrit, is a standing balance pose. From a standing position the one thigh is crossed over the other with the toes and/or the ankle hooked behind the lower calf. The weight of the body is balanced on the standing foot. The arms are crossed in front of the torso so that one arm is crossed above the other arm. The top arm is tucked into the elbow crook of the bottom arm. The hands are hooked around each other as well. Once hooked, the elbows lift up and the fingers stretch toward the sky. The gaze is soft and forward.',
+        difficulty: 2,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/eagle_R.png',
+        tags: newTags.filter(t => t.name === 'balance' || t.name === 'standing' || t.name === 'stretch-arms' || t.name === 'stretch-back')
       },
       { 
         name: 'Easy Seat', 
@@ -288,6 +307,126 @@ const tags = [
         time: 15,
         imageURL: 'https://pocketyoga.com/assets/images/full/easy.png',
         tags: newTags.filter(t => t.name === 'seated' || t.name === 'stretch-back' || t.name === 'warm-up')
+      },
+      { 
+        name: 'Eight Point', 
+        description: 'Eight Point pose, or Ashtangasana in Sanskrit, is a balanced prone position. Begin in table position on hand and knees. Shift your shoulders and heart forward beyond your fingertips and lower just your chest and chin to the ground. Keep your elbows narrow and in at your side with your tailbone lifting toward the sky. Press down firmly through your palms and fingertips, keeping your shoulder heads lifted as you continue to soften the place between your shoulder blades.',
+        difficulty: 2,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/eight_point.png',
+        tags: newTags.filter(t => t.name === 'kneeling' || t.name === 'strength' || t.name === 'stretch-back')
+      },
+      { 
+        name: 'Elbow Balance', 
+        description: 'Elbow balance pose, or Shayanasana in Sanskrit, is a balanced inverted position. Start in your forearm balance pose. Press your forearms firmly into the ground and engage your core. Shift your weight slightly to move your legs past your head then shift more weight towards your elbows. Lift one hand from the ground and bring it to your chin. If stable, bring the opposite hand to your chin for full balance.',
+        difficulty: 4,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/relaxed_stance.png',
+        tags: newTags.filter(t => t.name === 'arm-balancing' || t.name === 'core' || t.name === 'inversion' || t.name === 'strength')
+      },
+      { 
+        name: 'Extended Puppy', 
+        description: 'Extended puppy pose, or Uttana Shishosana in Sanskrit, is a prone stretching position. The body is prone to the earth and the forehead, chest and/or chin rest on the earth with the arms extended out in front pressing downward for a deeper stretch. The hips are at a 90-degree angle to the knees and pulling back toward the heels. The shins and the top of the feet are extended and firm on the earth. (A blanket can be used under the chin to relax the neck if needed). There is a slight curve in the lower back and the gaze is forward.',
+        difficulty: 2,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/puppy_extended.png',
+        tags: newTags.filter(t => t.name === 'shoulders' || t.name === 'stretch-back' || t.name === 'prone')
+      },
+      { 
+        name: 'Firefly', 
+        description: 'Firefly pose, or Tittibhasana in Sanskrit, is a strength based arm-balancing pose. The arms are straight and the palms are pressed into the earth. The body is supported on the straight arms with the eye of the elbows to the front. The legs are extended straight and forward from on the outside of the arms. The ribcage is lifted. The gaze is forward.',
+        difficulty: 3,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/firefly.png',
+        tags: newTags.filter(t => t.name === 'arm-balancing' || t.name === 'hip-opener' || t.name === 'strength')
+      },
+      { 
+        name: 'Floating Stick', 
+        description: 'Floating stick pose, or Brahmacharyasana in Sanskrit, is an intermediate arm-balancing pose. Begin in a seated position with your legs straight and place your hands on the ground at mid-thigh. Spread your fingers wide and actively ground your hands down. Seal your legs together and energize your legs to your toes. Hinge your chest slightly forward, engage your core and lift your hips up. Straighten your arms and maintain your core engagement. Shift your hips back slightly through your arms to find your center of gravity.',
+        difficulty: 2,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/floating_stick.png',
+        tags: newTags.filter(t => t.name === 'arm-balancing' || t.name === 'core' || t.name === 'strength')
+      },
+      { 
+        name: 'Flying Man', 
+        description: 'Flying man pose, or Eka Pada Koundinyasana in Sanskrit, is an advanced arm-balancing pose. From a lunge position, the palms are rooted into the earth on the inside of the thigh. Both elbows are bent in a 90-degree angle with one leg forward, extended and resting softly on the elbow. The other leg is extended back either balanced on the toes or suspended in flight with active toes. The Body is parallel to the earth. The gaze is to the front.',
+        difficulty: 3,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/lunge_hands_on_mat_flying_R.png',
+        tags: newTags.filter(t => t.name === 'arm-balancing' || t.name === 'core' || t.name === 'strength')
+      },
+      { 
+        name: 'Revolved Flying Man', 
+        description: 'Revolved flying man pose, or Parivritta Eka Pada Koundinyasana in Sanskrit, is an advanced arm-balancing pose. Starting from Downward-Facing Dog pose, bend both elbows to a 90-degree angle then cross one leg over the opposite elbow and extend the leg. The other leg is extended back either balanced on the toes or suspended in flight with active toes. The body is parallel to the earth. The gaze is to the front.',
+        difficulty: 3,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/flying_man_revolved_R.png',
+        tags: newTags.filter(t => t.name === 'arm-balancing' || t.name === 'core' || t.name === 'strength')
+      },
+      { 
+        name: 'Forearm Balance', 
+        description: 'Forearm balance pose, or Pincha Mayurasana in Sanskrit, is an advanced forearm-balancing pose. From an inverted position, with the body perpendicular to the earth, the weight of the body is supported on the forearms that are parallel and pressed firmly into the earth. The palms are flat. The knuckles are evenly pressed into the earth. The fingers are spread wide. Both legs reach up toward the sky in a straight line with the pelvis tucked. The ribcage is lifted. The gaze is forward.',
+        difficulty: 3,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/feathered_peacock.png',
+        tags: newTags.filter(t => t.name === 'arm-balancing' || t.name === 'core' || t.name === 'shoulders' || t.name === 'strength')
+      },
+      { 
+        name: 'Frog', 
+        description: 'Frog pose, or Bhekasana in Sanskrit, is a prone stretching pose. From bow pose, lift your chest upward. Using your hands, press the soles of your feet down, heels closer to the hips. If possible, rotate your knuckles forward and elbows toward the sky. Press your shoulder blades to touch, and keep elongating the psoas and quadriceps by pressing your pubic bone down into the earth.',
+        difficulty: 2,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/frog_traditional.png',
+        tags: newTags.filter(t => t.name === 'chest-opener' || t.name === 'prone' || t.name === 'stretch-legs')
+      },
+      { 
+        name: 'Garland', 
+        description: 'Garland pose, or Malasana in Sanskrit, is a stretching squat pose. From a squatting position the feet are as close together as possible (keep your heels on the floor if you can; otherwise, support them on a folded mat). The thighs are slightly wider than the torso. The torso is leaning gently forward and tucked snugly between the thighs. The elbows are pressed against the inner knees and the palms are together in Anjali Mudra (Salutation Seal). The knees resist the elbows to help lengthen the front torso. The gaze is soft and forward.',
+        difficulty: 1,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/garland_sideways_L.png',
+        tags: newTags.filter(t => t.name === 'core' || t.name === 'hip-opener' || t.name === 'standing')
+      },
+      { 
+        name: 'Gate', 
+        description: 'Gate pose, or Parighasana in Sanskrit, is a side stretching pose. Begin in a kneeling position with your hips stacked over your knees. Extend one leg out to the side. Reach your arms overhead to create length and then extend your arms to the side towards your extended leg. Allow your bottom hand to rest softly on your extended leg while you stabilize your core to extend through the opposite side. Turn your torso upward and externally rotate your extended leg and toes.',
+        difficulty: 1,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/gate_R.png',
+        tags: newTags.filter(t => t.name === 'kneeling' || t.name === 'stretch-legs' || t.name === 'stretch-core' || t.name === 'stretch-side')
+      },
+      { 
+        name: 'Seated Gate', 
+        description: 'Seated gate pose, or Parighasana in Sanskrit, is a seated side stretching pose. Sit on the floor with your torso upright and your legs wide. Bend one knee, finding an outer rotation, and place your heel behind your knee. Lift your arms up overhead, then take a side bend stretch toward your extended leg. Try to press your bottom shoulder against the inside of your extended knee. When your knee is straight, twist your torso toward the sky. Lift your opposite arm up, lean back slightly, and then, sweep it behind your ear and take hold of the outside edge of your extended foot. Press your elbows away from each other, using them like a crank to help twist your upper torso further. Turn your head to look at the sky. Repeat on opposite side.',
+        difficulty: 2,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/seated_gate_R.png',
+        tags: newTags.filter(t => t.name === 'seated' || t.name === 'stretch-legs' || t.name === 'stretch-core' || t.name === 'stretch-side')
+      },
+      { 
+        name: 'Goddess', 
+        description: 'Goddess pose, or Utkata Konasana in Sanskrit, is a standing power-based pose. Step your feet to the side to the length of your mat and wide apart. Turn your toes out toward the corners, heels in. Bend your knees directly over your toes and lower your hips into a squat at the same time. Tuck your tailbone in slightly and press your hips forward as you draw your thighs back. Pull your lower belly in and lift through your rib cage. Keep your knees in line with your toes. Soften your shoulders.',
+        difficulty: 1,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/goddess_L.png',
+        tags: newTags.filter(t => t.name === 'hip-opener' || t.name === 'standing' || t.name === 'strength')
+      },
+      { 
+        name: 'Gorilla', 
+        description: 'Gorilla pose, or Padahastasana in Sanskrit, is a standing deep-stretch pose. Begin from an upright standing position with the feet parallel (about six inches apart) and the front of the thighs contracted to lift the kneecaps. The body is bent forward from the crease of the hip joints with the legs completely straight and the torso parallel to the earth. The index and middle fingers of each hand are wrapped between the big toes and the second toes. Fingers and thumbs are curled around and under the big toes to firmly secure the wrap. The toes press down against the fingers. To fold deeper into the pose the sitting bones are lifted up toward the sky, the torso is pressed toward the thighs and the crown of the head is lowered toward the earth. Depending on flexibility, the lower back hollows to a greater or lesser degree. At the same time, without compressing the back of the neck, the sternum is lifted. The forehead stays relaxed. For the full extension of the pose the elbows bend out to the sides as the toes are pulled up. This lengthens the front and sides of the torso. For very long hamstrings, draw the forehead toward the shins. For hamstrings that are short, it is better to focus on keeping the front torso long. The gaze is down or toward the body.',
+        difficulty: 2,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/gorilla.png',
+        tags: newTags.filter(t => t.name === 'standing' || t.name === 'stretch-legs' || t.name === 'stretch-back')
+      },
+      { 
+        name: 'Grasshopper', 
+        description: 'Grasshopper pose, or Maksikanagasana in Sanskrit, is a strength based arm-balancing pose. Begin in revolved figure four pose. Sit a little deeper and be sure you have a strong side twist with the upper part of your arm connected to the sole of your flexed foot. Stay in your figure four twist as you drop your hands flat to the ground. Bend your elbows to about 90 degrees and shift your weight forward to lift the back foot off the floor. Try to straighten your floating leg forward and gaze to the toes of your floating leg.',
+        difficulty: 3,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/grasshopper_L.png',
+        tags: newTags.filter(t => t.name === 'arm-balancing' || t.name === 'core' || t.name === 'strength' || t.name === 'stretch-legs')
       },
       { 
         name: 'Half Pigeon', 
