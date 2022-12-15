@@ -20,10 +20,7 @@ db.dropCollection('poses')
 
 const tags = [
   {
-    name: 'arm balancing'
-  },
-  {
-    name: 'back bend'
+    name: 'arm-balancing'
   },
   {
     name: 'balancing'
@@ -32,19 +29,22 @@ const tags = [
     name: 'bind'
   },
   {
-    name: 'chest opener'
+    name: 'chest-opener'
   },
   {
     name: 'core'
   },
   {
-    name: 'forward bend'
+    name: 'forward-bend'
   },
   {
-    name: 'hip opener'
+    name: 'hip-opener'
   },
   {
     name: 'inversion'
+  },
+  {
+    name: 'kneeling'
   },
   {
     name: 'restorative'
@@ -79,6 +79,9 @@ const tags = [
   {
     name: 'supine'
   },
+  {
+    name: 'warm-up'
+  },
   ]
 
   const addManyTags = async () => {
@@ -100,7 +103,15 @@ const tags = [
         difficulty: 2,
         time: 15,
         imageURL: 'https://pocketyoga.com/assets/images/full/archer_R.png',
-        tags: newTags.filter(t => t.name === 'seated' || t.name === 'core' || t.name === 'hip opener'|| t.name === 'stretch-arms' || t.name === 'stretch-back' || t.name === 'stretch-legs')
+        tags: newTags.filter(t => t.name === 'seated' || t.name === 'core' || t.name === 'hip-opener'|| t.name === 'stretch-arms' || t.name === 'stretch-back' || t.name === 'stretch-legs')
+      }, 
+      { 
+        name: 'Banana', 
+        description: 'Banana pose, or kadalikā in Sanskrit, is a supine full-body stretch pose. Laying on your back, bring your hands overhead, interlace your fingers or catch the opposite wrist. Extend your spine and keep your legs together. With your glutes and hips connected to the floor, walk your feet and upper body to one side. When your body becomes more flexible, arch a little more, keeping both hips on the floor. Come back to center.',
+        difficulty: 1,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/banana_R.png',
+        tags: newTags.filter(t => t.name === 'supine' || t.name === 'stretch-arms' || t.name === 'stretch-core'|| t.name === 'stretch-legs' || t.name === 'warm-up')
       }, 
       { 
         name: 'Boat', 
@@ -111,6 +122,14 @@ const tags = [
         tags: newTags.filter(t => t.name === 'seated' || t.name === 'core' || t.name === 'stretch-legs' || t.name === 'balance')
       }, 
       { 
+        name: 'Bridge', 
+        description: 'Bridge pose, or Setu Bandha Sarvangasana in Sanskrit, is a supine full body pose. From a supine position, on your back, the hips are pressed up with the heels of the feet rooted into the earth close to the sits bones. The toes are actively lifted and the pelvis tucked. The thighs are parallel to the earth and the fingers are interlaced under the body with the ribcage lifted and the heart open. The back of the neck rests on the earth. The gaze is to the sky.',
+        difficulty: 2,
+        time: 10,
+        imageURL: 'https://pocketyoga.com/assets/images/full/bridge.png',
+        tags: newTags.filter(t => t.name === 'supine' || t.name === 'core' || t.name === 'chest-opener' || t.name === 'strength')
+      }, 
+      { 
         name: 'Half Boat', 
         description: 'Half boat pose, or Ardha Navasana in Sanskrit, is an easier variation of the boat yoga posture. From a seated position the hands are gripped around the back of the legs and the knees are bent in a 90-degree angle. Both legs are pulled in toward the abdomen. The core is engaged to maintain balance on the sits bones (be sure that the back does not round). The front of the torso lengthens between the pubis and top of the sternum as the spine extends in both directions reaching up to the sky and rooting down to the earth. The gaze is forward.',
         difficulty: 1,
@@ -119,12 +138,28 @@ const tags = [
         tags: newTags.filter(t => t.name === 'seated' || t.name === 'core' || t.name === 'balance')
       }, 
       { 
+        name: 'Bow', 
+        description: 'Bow pose, or Dhanurasana in Sanskrit, is a prone stretching pose. From a prone position with the abdomen on the earth, the hands grip the ankles (but not the tops of the feet) with knees no wider than the width of your hips. The heels are lifted away from the buttocks and at the same time the thighs are lifted away from the earth working opposing forces as the heart center, hips and back open. The gaze is forward.',
+        difficulty: 2,
+        time: 10,
+        imageURL: 'https://pocketyoga.com/assets/images/full/bow.png',
+        tags: newTags.filter(t => t.name === 'prone' || t.name === 'stretch-legs' || t.name === 'stretch-core' || t.name === 'core')
+      }, 
+      { 
         name: 'Bird of Paradise', 
         description: 'Bird of paradise pose, or Svarga Dvijasana in Sanskrit, is a beautiful standing balancing pose. One foot stays rooted into the earth and straightens while the opposite leg comes up with a bent knee. Once you are standing upright extend the leg toward the sky. The ribcage is lifted and the heart is open in the full expression of the pose. The gaze is forward.',
         difficulty: 3,
         time: 15,
         imageURL: 'https://pocketyoga.com/assets/images/full/chair_twist_bind_up_L.png',
-        tags: newTags.filter(t => t.name === 'standing' || t.name === 'balance' || t.name === 'core' || t.name === 'strength' || t.name === 'chest opener')
+        tags: newTags.filter(t => t.name === 'standing' || t.name === 'balance' || t.name === 'core' || t.name === 'strength' || t.name === 'chest-opener')
+      }, 
+      { 
+        name: 'Revolved Bird of Paradise', 
+        description: 'Revolved bird of paradise pose, or Parivritta Svarga Dvijasana in Sanskrit, is a challenging variation of bird of paradise. The lower arm reaches back around the legs as the upper arm wraps around the back and the fingers of the respective hands eventually meet and interlace. One foot stays rooted into the earth and straightens while the opposite leg comes up with a bent knee. Once you are standing upright extend the leg toward the sky. The ribcage is lifted and the heart is open in the full expression of the pose. The gaze is forward.',
+        difficulty: 3,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/bird_of_paradise_revolved_R.png',
+        tags: newTags.filter(t => t.name === 'standing' || t.name === 'balance' || t.name === 'core' || t.name === 'stretch-core' || t.name === 'strength')
       }, 
       { 
         name: 'Butterfly', 
@@ -132,7 +167,15 @@ const tags = [
         difficulty: 1,
         time: 15,
         imageURL: 'https://pocketyoga.com/assets/images/full/butterfly.png',
-        tags: newTags.filter(t => t.name === 'seated' || t.name === 'stretch-back')
+        tags: newTags.filter(t => t.name === 'seated' || t.name === 'stretch-back' || t.name === 'warm-up')
+      }, 
+      { 
+        name: 'Cat', 
+        description: 'Cat pose, or Bidalasana in Sanskrit, is a kneeling pose that inverses cow. From table pose, shift some weight to the palms. The wrists, elbows and shoulders are in one line. The abdomen is pulled in and up with the spine arched in a strong Cobra spine. The crown of the head is toward the earth and the neck is relaxed. The gaze is between the arms toward the belly.',
+        difficulty: 1,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/cat.png',
+        tags: newTags.filter(t => t.name === 'kneeling' || t.name === 'stretch-back' || t.name === 'warm-up')
       }, 
       { 
         name: 'Caterpillar', 
@@ -143,20 +186,60 @@ const tags = [
         tags: newTags.filter(t => t.name === 'seated' || t.name === 'stretch-back')
       }, 
       { 
-        name: 'Easy Seat', 
-        description: 'Easy seat pose, or Sukhasana in Sanskrit, is a neutral seated posture. From a seated position, bring your knees into a simple cross legged pose. Both knees should be below the hips. Place the hands on the thighs or knees and keep the spine straight.',
+        name: 'Chair', 
+        description: 'Chair pose, or Utkatasana in Sanskrit, is a standing pose of strength. From a standing position, the feet are together and rooted into the earth with toes actively lifted. The knees are bent and the weight of the body is on the heels of the feet. The pelvis is tucked in and the ribcage is lifted. The neck is a natural extension of the spine. The arms are lifted up toward the sky with the elbows straight and the biceps by the ears. The hands can be together or separated and facing each other with the fingers spread wide. The gaze is forward.',
         difficulty: 1,
         time: 15,
-        imageURL: 'https://pocketyoga.com/assets/images/full/easy.png',
-        tags: newTags.filter(t => t.name === 'seated' || t.name === 'stretch-back')
+        imageURL: 'https://pocketyoga.com/assets/images/full/chair.png',
+        tags: newTags.filter(t => t.name === 'core' || t.name === 'standing' || t.name === 'strength' || t.name === 'stretch-arms' || t.name === 'stretch-back')
       }, 
       { 
-        name: 'Revolved Bird of Paradise', 
-        description: 'Revolved bird of paradise pose, or Parivritta Svarga Dvijasana in Sanskrit, is a challenging variation of bird of paradise. The lower arm reaches back around the legs as the upper arm wraps around the back and the fingers of the respective hands eventually meet and interlace. One foot stays rooted into the earth and straightens while the opposite leg comes up with a bent knee. Once you are standing upright extend the leg toward the sky. The ribcage is lifted and the heart is open in the full expression of the pose. The gaze is forward.',
+        name: 'Child', 
+        description: 'Child\'s pose, or Balasana in Sanskrit, is kneeling pose of rest. From a kneeling position, the toes and knees are together with most of the weight of the body resting on the heels of the feet. The arms are extended back resting alongside the legs. The forehead rests softly onto the earth. The gaze is down and inward.',
+        difficulty: 1,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/child_traditional.png',
+        tags: newTags.filter(t => t.name === 'kneeling' || t.name === 'restorative' || t.name === 'hip-opener')
+      }, 
+      { 
+        name: 'Cobra', 
+        description: 'Cobra pose, or Bhujangasana in Sanskrit, is a proning core stretching pose. Begin by lying face down with your legs extended behind you, hip-width apart and the tops of your feet rested. Spread your fingers wide and place your hands under your shoulders with your fingers pointing toward the top of the mat. Hug your elbows into the sides of your body. Press down through the tops of your feet and lift your head and chest off the floor. Keep your lower ribs on the floor. Draw your shoulders back and your heart forward keeping your head a natural extension of your spine and your shoulders rolled down and away from your ears. Begin to straighten your arms and lift your chest off the floor. Press the tops of your thighs down firmly into the floor. This is Low Cobra. Little to no weight on your hands. If your flexibility allows, you can straighten your arms all the way while maintaining the connection of the front of your pelvis and legs with the floor.',
+        difficulty: 2,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/cobra_full.png',
+        tags: newTags.filter(t => t.name === 'prone' || t.name === 'strength' || t.name === 'stretch-core')
+      }, 
+      { 
+        name: 'Corpse', 
+        description: 'Corpse pose, or Shavasana in Sanskrit, is a restful supine position. The body rests on the earth in a supine position with the arms resting by the side body. The palms are relaxed and open toward the sky. The shoulder blades are pulled back, down and rolled under comfortably, resting evenly on the earth. The legs are extended down and splayed open. The heels are in and the toes flop out. The eyes are closed. Everything is relaxed. The gaze is inward.',
+        difficulty: 1,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/corpse.png',
+        tags: newTags.filter(t => t.name === 'restorative' || t.name === 'supine')
+      }, 
+      { 
+        name: 'Reverse Corpse', 
+        description: 'Corpse pose, or Advasana in Sanskrit, is a restful prone position. From a prone position, relax down onto your belly, legs extended straight back. Forehead and chin are centered allowing for a neutral neck and spine. Extend your arms overhead, palms facing down.',
+        difficulty: 1,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/corpse_front_arms_forward.png',
+        tags: newTags.filter(t => t.name === 'prone' || t.name === 'restorative')
+      }, 
+      { 
+        name: 'Cow', 
+        description: 'Cow pose, or Bitilasana in Sanskrit, is a kneeling pose that inverses cat. From table pose, the ribcage is lifted with a gentle sway in the low back. The tailbone lifts up into dog tilt. The eyes are soft and the gaze is to the sky.',
+        difficulty: 1,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/dog.png',
+        tags: newTags.filter(t => t.name === 'kneeling' || t.name === 'stretch-core' || t.name === 'warm-up')
+      }, 
+      { 
+        name: 'Crane', 
+        description: 'Crane pose, or Bakasana in Sanskrit, is an arm-balancing pose of strength. Come to a squatting position with both feet together. Separate your knees but keep your feet together. Spread your fingers wide and press your palms and fingertips into the mat. Come up high on your toes and lift your hips as high as possible. Keeping straight arms, place your knees up into your arm pits, engage your core and begin to hinge forward. Once your toes lift off the ground, find your balance and pull your heels up close to your sit bones. Keep your chin lifted and gaze slightly forward on the ground.',
         difficulty: 3,
         time: 15,
-        imageURL: 'https://pocketyoga.com/assets/images/full/bird_of_paradise_revolved_R.png',
-        tags: newTags.filter(t => t.name === 'standing' || t.name === 'balance' || t.name === 'core' || t.name === 'stretch-core' || t.name === 'strength')
+        imageURL: 'https://pocketyoga.com/assets/images/full/crane.png',
+        tags: newTags.filter(t => t.name === 'arm-balancing' || t.name === 'balancing' ||t.name === 'core' || t.name === 'inversion' || t.name === 'shoulders' || t.name === 'strength')
       }, 
       { 
         name: 'Crescent Lunge', 
@@ -173,14 +256,62 @@ const tags = [
         time: 15,
         imageURL: 'https://pocketyoga.com/assets/images/full/warrior_i_kneeling_L.png',
         tags: newTags.filter(t => t.name === 'standing' || t.name === 'balance' || t.name === 'core' || t.name === 'stretch-legs' || t.name === 'shoulders')
-      }, 
+      },
       { 
         name: 'Standing Crescent Moon', 
-        description: 'Crescent moon, or indudalasana in Sanskrit, is a standing posture that lengthens the rib cage. From mountain with arms up pose, extend upwards toward the sky as you bend to one side, lengthening the opposite side of the rib cage and stretch.',
+        description: 'Crescent moon pose, or Indudalasana in Sanskrit, is a standing posture that lengthens the rib cage. From mountain with arms up pose, extend upwards toward the sky as you bend to one side, lengthening the opposite side of the rib cage and stretch.',
         difficulty: 1,
         time: 15,
         imageURL: 'https://pocketyoga.com/assets/images/full/crescent_moon_R.png',
         tags: newTags.filter(t => t.name === 'standing' || t.name === 'balance' || t.name === 'stretch-core')
+      }, 
+      { 
+        name: 'Crow', 
+        description: 'Crow pose, or Kakasana in Sanskrit, is an inverted, arm-balancing pose. Come to a squatting position with both feet together. Separate your knees but keep your feet together. Spread your fingers wide and press your palms and fingertips into the mat. Come up high on your toes and lift your hips as high as possible. As you shift the weight of your body slightly forward, bend your arms and place your knees on top of your elbows. Continue shifting forward until your toes lift up and the full weight of the body is on your arms. The gaze is down and slightly forward.',
+        difficulty: 3,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/crow.png',
+        tags: newTags.filter(t => t.name === 'arm-balancing' || t.name === 'core' || t.name === 'shoulders' || t.name === 'strength')
+      },
+      { 
+        name: 'Dolphin', 
+        description: 'Dolphin pose, or Ardha Pincha Mayurasana in Sanskrit, is an arm and leg supported pose. From downward-facing dog pose, the forearms are planted onto the earth with the elbows narrow and the palms down in a Sphinx position. The pelvis is tucked. The ribcage lifted. The feet are rooted and the legs are straight with the tailbone in dog tilt. The gaze is down and slightly forward.',
+        difficulty: 2,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/dolphin.png',
+        tags: newTags.filter(t => t.name === 'core' || t.name === 'forward-bend' || t.name === 'shoulders' || t.name === 'strength')
+      },
+      { 
+        name: 'Easy Seat', 
+        description: 'Easy seat pose, or Sukhasana in Sanskrit, is a neutral seated posture. From a seated position, bring your knees into a simple cross legged pose. Both knees should be below the hips. Place the hands on the thighs or knees and keep the spine straight.',
+        difficulty: 1,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/easy.png',
+        tags: newTags.filter(t => t.name === 'seated' || t.name === 'stretch-back' || t.name === 'warm-up')
+      },
+      { 
+        name: 'Half Pigeon', 
+        description: 'Lotus pose, or Ardha Kapotasana in Sanskrit, is a kneeling lunge-like posture. From a lounging position, the hips are parallel and squared to the earth with the front knee bent in a 90-degree angle and flat on the earth. The front foot rests close to the groin. The back leg is extended with the knee and the back foot squared, parallel and pressed firmly into the earth. The ribcage is lifted. The heart is open. Fingers rest on the earth by the side body. The gaze is forward.',
+        difficulty: 1,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/pigeon_half_L.png',
+        tags: newTags.filter(t => t.name === 'seated' || t.name === 'core' || t.name === 'hip-opener')
+      }, 
+      { 
+        name: 'Lotus', 
+        description: 'Lotus pose, or Padmasana in Sanskrit, is a seated pose that emphasizes posture. Bring the bottom ankle and place it on top of the opposite knee, both ankles will be resting on top of the thighs.',
+        difficulty: 2,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/lotus_full.png',
+        tags: newTags.filter(t => t.name === 'seated' || t.name === 'core' || t.name === 'hip-opener')
+      }, 
+      { 
+        name: 'Table', 
+        description: 'Table pose, or Chakravakasana in Sanskrit, is a neutral kneeling posture. From a kneeling position, the knees and arms form a box with the spine and neck in a neutral position. The hips and shoulders are squared to the earth and the palms are rooted with the weight of the body equally distributed between the heel of the hands and the top of the knees. The joints are stacked with the wrists, elbows and shoulders in a straight line. The gaze is down.',
+        difficulty: 1,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/box_neutral.png',
+        tags: newTags.filter(t => t.name === 'kneeling' || t.name === 'core' || t.name === 'warm-up')
       }, 
     ];
     const addManyPoses = async () => {
