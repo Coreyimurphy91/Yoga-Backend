@@ -251,12 +251,20 @@ const tags = [
         tags: newTags.filter(t => t.name === 'arm-support' || t.name === 'kneeling' || t.name === 'stretch-core' || t.name === 'warm-up')
       }, 
       { 
+        name: 'Cradle the Baby', 
+        description: 'Cradle the baby pose, or Hindolasana in Sanskrit, is a seated stretching pose. Begin in a seated position. Bend one knee and externally rotate it out to the side. Position the knee into the crease of your elbow while bringing the foot into the crease of your opposite elbow. If you cannot bring your knee and foot into the creases of your elbows, scoop your arms under your calf and gently hug your leg closer to your chest. Keep the opposite leg long and extended and energize through the heel. Flex both feet and grow the spine tall.',
+        difficulty: 1,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/cradle_R.png',
+        tags: newTags.filter(t => t.name === 'seated' || t.name === 'stretch-hips' || t.name === 'stretch-legs')
+      }, 
+      { 
         name: 'Crane', 
         description: 'Crane pose, or Bakasana in Sanskrit, is an arm-balancing pose of strength. Come to a squatting position with both feet together. Separate your knees but keep your feet together. Spread your fingers wide and press your palms and fingertips into the mat. Come up high on your toes and lift your hips as high as possible. Keeping straight arms, place your knees up into your arm pits, engage your core and begin to hinge forward. Once your toes lift off the ground, find your balance and pull your heels up close to your sit bones. Keep your chin lifted and gaze slightly forward on the ground.',
         difficulty: 3,
         time: 15,
         imageURL: 'https://pocketyoga.com/assets/images/full/crane.png',
-        tags: newTags.filter(t => t.name === 'arm-balancing' || t.name === 'balance' ||t.name === 'core' || t.name === 'inversion' || t.name === 'shoulders' || t.name === 'strength')
+        tags: newTags.filter(t => t.name === 'arm-balancing' || t.name === 'balance' || t.name === 'core' || t.name === 'inversion' || t.name === 'shoulders' || t.name === 'strength')
       }, 
       { 
         name: 'Crescent Lunge', 
@@ -665,6 +673,134 @@ const tags = [
         time: 15,
         imageURL: 'https://pocketyoga.com/assets/images/full/plow.png',
         tags: newTags.filter(t => t.name === 'arm-support' || t.name === 'core' || t.name === 'stretch-back' || t.name === 'stretch-legs' || t.name === 'supine')
+      },
+      { 
+        name: 'Push Up (Low)', 
+        description: 'Low push up pose, or Chaturanga Dandasana in Sanskrit, is a prone, arm-supported pose. From a prone position, the weight of the body is supported on the hands and the toes. The body is approximately 5 inches above and parallel to the earth. The abdomen is pulled up toward the spine. The pelvis is tucked. The palms are flat. The elbows are close to the side body and bent in a 90-degree angle and inline with the wrists. The toes are rooted into the earth as the heels push back. The gaze is down.',
+        difficulty: 2,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/four_limbed_staff.png',
+        tags: newTags.filter(t => t.name === 'arm-support' || t.name === 'core' || t.name === 'prone' || t.name === 'strength')
+      },
+      { 
+        name: 'Pyramid', 
+        description: 'Pyramid pose, or Parshvottanasana in Sanskrit, is a standing pose. From triangle pose, clasp your hands behind your back and hinge your torso forward at the crease of your hip joint and fold your chest over your front thigh. Continue squaring your hips forward, gaze is down.',
+        difficulty: 2,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/pyramid_prayer_L.png',
+        tags: newTags.filter(t => t.name === 'inversion' || t.name === 'standing' || t.name === 'stretch-back' || t.name === 'stretch-legs')
+      },
+      { 
+        name: 'Rabbit', 
+        description: 'Rabbit pose, or Shashankasana in Sanskrit, is a kneeling restorative pose. From child\'s pose, rest the torso onto the thighs and the forehead onto the earth. Walk the knees up to meet the forehead, shifting some weight to the crown of the head. Find the maximum comfortable neck stretch and then reach back and grip the base of the feet (use a strap if necessary). To increase the stretch and come into the full expression of the pose, gradually lift or elevate your hips. Be sure to keep your forehead as close as possible to your knees and the topmost part of your skull (crown of the head) on the earth. Contract your abdominal muscles and gaze at your ankles.',
+        difficulty: 1,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/rabbit.png',
+        tags: newTags.filter(t => t.name === 'kneeling' || t.name === 'restorative' || t.name === 'stretch-back')
+      },
+      { 
+        name: 'Rejuvination', 
+        description: 'Rejuvination pose, or Supta Dandasana in Sanskrit, is a restful supine pose. From a supine position, with the back relaxed onto the earth, the legs extend toward the sky without any tension behind the knees. The arms rest by the side body and the palms open toward the sky in a receptive mode. Hold this position or gently sway the legs from side to side. The eyes are closed and the gaze is inward.',
+        difficulty: 1,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/corpse_double_leg_raise.png',
+        tags: newTags.filter(t => t.name === 'restorative' || t.name === 'supine')
+      },
+      { 
+        name: 'Rooster', 
+        description: 'Rooster pose, or Kukkutasana in Sanskrit, is an arm-balancing pose. Come into your lotus pose. Shift your hips back slightly and thread your hands and arms through your Lotus legs between your thighs and calves. Place your hands firmly on the ground with your fingers spread wide. Shift forward, engage your core, and straighten your arms to lift off.',
+        difficulty: 3,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/rooster.png',
+        tags: newTags.filter(t => t.name === 'arm-balancing' || t.name === 'shoulders' || t.name === 'strength')
+      },
+      { 
+        name: 'Sage Gheranda', 
+        description: 'Sage Gheranda\'s pose, or Gherandasana in Sanskrit, is an advanced prone pose. Begin in bow pose. Rotate the knuckles of one hand so they face forward and the elbow is towards the sky. Bend the knee as much as possible bringing the knee and sole of the foot as close to the ground as possible. Extend the opposite leg straight into the sky. Lift the chest and take your gaze upwards. Repeat on the opposite side.',
+        difficulty: 3,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/gheranda_i_L.png',
+        tags: newTags.filter(t => t.name === 'arm-balancing' || t.name === 'prone' || t.name === 'strength' || t.name === 'stretch-core' || t.name === 'stretch-legs')
+      },
+      { 
+        name: 'Sage Marichi\'s', 
+        description: 'Sage Marichi\'s pose, or Marichyasana A in Sanskrit, is a seated forward-bend pose. Begin in a seated position. Bend one knee in toward your chest and place your foot on the floor, with your heel as close to the same side sitting bone as possible. Your inner thigh and torso should be close. Keep the opposite leg extended and rotated slightly inward by grounding the head of your thighbone into the floor. Flex the foot of your activated, extended leg. Extend the arm of your same side bent knee high into the sky and then begin to reach it forward. As you reach your arm forward, lengthen your torso at the same time and snuggle your shin closer to your armpit. Flip your wrist, thumb side down, then sweep your forearm around the outside of your bent knee along your shin. Try to bring it around to your thigh or further. Then sweep your opposite arm around behind your back to catch opposite fingertips, or try to catch your wrist. Extend your torso forward from the groins, keeping your lower belly long. Lower your front torso as closely as possible to your extended leg. Be sure your shoulders don\'t scrunch up into your ears; draw your shoulders blades actively down your back. Option to lift your torso back up to extend through your twist.',
+        difficulty: 2,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/marichi_i_traditional_R.png',
+        tags: newTags.filter(t => t.name === 'forward-bend' || t.name === 'seated' || t.name === 'stretch-arms' || t.name === 'stretch-back' || t.name === 'stretch-core' || t.name === 'stretch-legs')
+      },
+      { 
+        name: 'Sage Marichi\'s Two', 
+        description: 'Sage Marichi\'s second pose, or Marichyasana B in Sanskrit, is a seated forward-bend pose. Begin in a seated position. Bring one leg into half lotus pose or bend your knee so the sole of your foot is close to the opposite inner thigh. Bend your opposite knee in as if you were taking Sage Marichi\'s pose. Extend the arm (of your same side planted foot) high into the sky and then begin to reach it forward. As you reach your arm forward, lengthen your torso at the same time and snuggle your shin closer to your armpit. Flip your wrist, thumb side down, then sweep your forearm around the outside of your bent knee along your shin. Try to bring it around to your thigh or further. Then sweep your opposite arm around behind your back to catch opposite fingertips, or try to catch your wrist. Extend your torso forward from the groins, keeping your lower belly long. Lower your front torso forward toward your knee that is in half lotus pose. Be sure your shoulders don\'t scrunch up into your ears; draw your shoulders blades actively down your back. Option to lift your torso back up to extend through your twist.',
+        difficulty: 3,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/marichi_ii_traditional_R.png',
+        tags: newTags.filter(t => t.name === 'forward-bend' || t.name === 'seated' || t.name === 'stretch-arms' || t.name === 'stretch-back' || t.name === 'stretch-core')
+      },
+      { 
+        name: 'Sage Marichi\'s Three', 
+        description: 'Sage Marichi\'s third pose, or Marichyasana C in Sanskrit, is a seated stretch pose. Begin in a seated position. Bend one knee in toward your chest and place your foot on the floor, with your heel as close to the same side sitting bone as possible. Your inner thigh and torso should be close. Keep the opposite leg extended and rotated slightly inward by grounding the head of your thighbone into the floor. Flex the foot of your activated, extended leg. Extend the arm of your same side extended leg high into the sky and begin to twist it to the outside of your bent knee. Use your opposite hand as leverage to twist deeper. Hook your elbow to the outside of your thigh and gaze over your back shoulder. If you want to extend your twist deeper, wrap your arm around the shin of your bent knee and sweep your opposite arm around to meet it. Catch opposite fingertips or the wrist. Keep a long spine.',
+        difficulty: 2,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/marichi_iii_traditional_R.png',
+        tags: newTags.filter(t => t.name === 'seated' || t.name === 'stretch-arms' || t.name === 'stretch-back' || t.name === 'stretch-core')
+      },
+      { 
+        name: 'Sage Marichi\'s Three', 
+        description: 'Sage Marichi\'s third pose, or Marichyasana C in Sanskrit, is a seated stretch pose. Begin in a seated position. Bend one knee in toward your chest and place your foot on the floor, with your heel as close to the same side sitting bone as possible. Your inner thigh and torso should be close. Keep the opposite leg extended and rotated slightly inward by grounding the head of your thighbone into the floor. Flex the foot of your activated, extended leg. Extend the arm of your same side extended leg high into the sky and begin to twist it to the outside of your bent knee. Use your opposite hand as leverage to twist deeper. Hook your elbow to the outside of your thigh and gaze over your back shoulder. If you want to extend your twist deeper, wrap your arm around the shin of your bent knee and sweep your opposite arm around to meet it. Catch opposite fingertips or the wrist. Keep a long spine.',
+        difficulty: 2,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/marichi_iii_traditional_R.png',
+        tags: newTags.filter(t => t.name === 'seated' || t.name === 'stretch-arms' || t.name === 'stretch-back' || t.name === 'stretch-core')
+      },
+      { 
+        name: 'Sage Marichi\'s Four', 
+        description: 'Sage Marichi\'s fourth pose, or Marichyasana D in Sanskrit, is a seated stretch pose. Begin in a seated position. Bring one leg into half lotus pose or bend your knee so the sole of your foot is close to the opposite inner thigh. Bend your opposite knee in as if you were taking Sage Marichi\'s pose, foot on the floor, heel close to your sit bone. Extend your arm (same side of your Lotus leg) high into the sky and begin to twist it to the outside of your bent knee. Use your opposite hand as leverage to twist deeper. Hook your elbow to the outside of your thigh and gaze over your back shoulder. If you want to extend your twist deeper, wrap your arm around the shin of your bent knee and sweep your opposite arm around to meet it. Catch opposite fingertips or the wrist. Keep a long spine.',
+        difficulty: 3,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/marichi_iv_traditional_R.png',
+        tags: newTags.filter(t => t.name === 'hip-opener' || t.name === 'seated' || t.name === 'stretch-arms' || t.name === 'stretch-back' || t.name === 'stretch-core')
+      },
+      { 
+        name: 'Sage Visvamitra\'s', 
+        description: 'Sage Visvamitra\'s pose, or Vishvamitrasana in Sanskrit, is a balanced lunged pose. Begin in lizard pose with arms straightened and place your inside shoulder underneath your front thigh. Curl up your back toes and pivot your foot down as if in a Warrior pose. Ground the palm that is rooted under your front thigh, walk your front foot slightly to the opposite site to get the shoulder deep under your thigh. Begin to shift your weight back slightly. Bend your knee slightly to lift your foot off the ground and then straighten your leg. Ground down firmly to the outer edge of your back foot and your front palm. Roll your chest toward the sky and allow your gaze to follow.',
+        difficulty: 3,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/visvamitra_full_L.png',
+        tags: newTags.filter(t => t.name === 'arm-support' || t.name === 'balance' || t.name === 'strength' || t.name === 'stretch-legs' || t.name === 'stretch-side')
+      },
+      { 
+        name: 'Scale', 
+        description: 'Scale pose, or Tolasana in Sanskrit, is an arm-balanced pose. Begin in lotus pose and place your palms on the floor beside your hips. Spread your fingers wide and push your hands against the floor, contract your abdominal muscles, and lift your legs and glutes away from the floor.',
+        difficulty: 2,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/lotus_elevated.png',
+        tags: newTags.filter(t => t.name === 'arm-balancing' || t.name === 'core' || t.name === 'strength')
+      },
+      { 
+        name: 'Scorpion', 
+        description: 'Scorpion pose, or Vrischikasana in Sanskrit, is an arm-balanced pose. From forearm balance pose the knees are bent and the feet are lowered toward the head as the crown of the head lifts and the upper thoracic reaches through to the front. To maintain balance the ribs move back and shoulders lower back and away from the ears as the forearms and palms push into the earth. The knees may separate, but keep the toes together. The gaze is forward or up depending on your flexibility.',
+        difficulty: 3,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/scorpion.png',
+        tags: newTags.filter(t => t.name === 'arm-balancing' || t.name === 'core' || t.name === 'shoulders' || t.name === 'strength' || t.name === 'stretch-core')
+      },
+      { 
+        name: 'Shoulder Pressing', 
+        description: 'Shoulder pressing pose, or Bhujapidasana in Sanskrit, is an arm-balanced pose. Come into garland pose. Take your arms through your legs and place your palms flat on the floor behind your ankles. You may need to slightly lift up your hips to get there. Fingers face forward. Work your upper arm as high up under your knees as possible. Bend your elbows to create a shelf. Hinge forward onto your palms until your feet begin to lift off. Press firmly into the earth as you play with lifting one foot, then the other. If available, lift both feet and cross your ankles.',
+        difficulty: 3,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/scale_forward.png',
+        tags: newTags.filter(t => t.name === 'arm-balancing' || t.name === 'hip-opener' || t.name === 'core' || t.name === 'strength')
+      },
+      { 
+        name: 'Shoulder Stand (Supported)', 
+        description: 'Supported shoulder stand pose, or Salamba Sarvangasana in Sanskrit, is an arm-supported inversion pose. From a supine position, the upper back is resting on the earth with the hips straight up toward the sky. The torso is perpendicular to the earth. The legs are fully extended and the toes are active. The hands are either supporting the lower back or extended up by the side body in matchstick. The weight rests on the center of the back of your skull and the neck maintains its natural curvature. The chest reaches towards the chin and the gaze is inward or towards the toes.',
+        difficulty: 3,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/scale_forward.png',
+        tags: newTags.filter(t => t.name === 'arm-balancing' || t.name === 'hip-opener' || t.name === 'core' || t.name === 'strength')
       },
       { 
         name: 'Table', 
