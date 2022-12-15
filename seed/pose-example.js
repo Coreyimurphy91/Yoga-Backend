@@ -168,7 +168,7 @@ const tags = [
         difficulty: 3,
         time: 15,
         imageURL: 'https://pocketyoga.com/assets/images/full/bird_of_paradise_revolved_R.png',
-        tags: newTags.filter(t => t.name === 'standing' || t.name === 'balance' || t.name === 'core' || t.name === 'stretch-core' || t.name === 'strength')
+        tags: newTags.filter(t => t.name === 'standing' || t.name === 'balance' || t.name === 'core' || t.name === 'stretch-core' || t.name === 'stretch-hips' || t.name === 'strength')
       }, 
       { 
         name: 'Butterfly', 
@@ -457,14 +457,6 @@ const tags = [
         time: 15,
         imageURL: 'https://pocketyoga.com/assets/images/full/half_moon_revolved_L.png',
         tags: newTags.filter(t => t.name === 'arm-support' || t.name === 'core' || t.name === 'standing' || t.name === 'stretch-back' || t.name === 'stretch-core' || t.name === 'stretch-legs' || t.name === 'stretch-side')
-      },
-      { 
-        name: 'Half Pigeon', 
-        description: 'Lotus pose, or Ardha Kapotasana in Sanskrit, is a kneeling lunge-like posture. From a lounging position, the hips are parallel and squared to the earth with the front knee bent in a 90-degree angle and flat on the earth. The front foot rests close to the groin. The back leg is extended with the knee and the back foot squared, parallel and pressed firmly into the earth. The ribcage is lifted. The heart is open. Fingers rest on the earth by the side body. The gaze is forward.',
-        difficulty: 1,
-        time: 15,
-        imageURL: 'https://pocketyoga.com/assets/images/full/pigeon_half_L.png',
-        tags: newTags.filter(t => t.name === 'seated' || t.name === 'core' || t.name === 'hip-opener')
       }, 
       { 
         name: 'Handstand', 
@@ -483,7 +475,7 @@ const tags = [
         tags: newTags.filter(t => t.name === 'restorative' || t.name === 'supine' || t.name === 'warm-up')
       }, 
       { 
-        name: 'Headstand (supported)', 
+        name: 'Headstand (Supported)', 
         description: 'Supported headstand pose, or Salamba Shirshasana A in Sanskrit, is an inverted balance pose. In this inverted posture, the weight of the body is evenly balanced on the forearms that are narrow. The fingers are interlaced (pinky fingers spooning). The crown of the head is resting softly on the earth (only to regulate balance) between the interlaced fingers hugging the head in order to stabilize and protect the neck. The shoulder blades are pressed against the back to widen the back as the tailbone continues to lift upward toward the heels. The gaze is straight.',
         difficulty: 3,
         time: 15,
@@ -491,7 +483,7 @@ const tags = [
         tags: newTags.filter(t => t.name === 'balance' || t.name === 'core' || t.name === 'inversion' || t.name === 'shoulders' || t.name === 'strength')
       }, 
       { 
-        name: 'Headstand (tripod)', 
+        name: 'Headstand (Tripod)', 
         description: 'Tripod headstand pose, or Mukta Hasta Shirshasana A in Sanskrit, is an inverted balance pose. The body is inverted and perpendicular to the earth with the legs extended up. The weight of the body is balanced between the crown of the head and the palms of the hands with the elbows bent in a 90-degree angle and the fingers forward. The head and hands are spaced equally forming an equilateral triangle. The neck is a natural extension of the spine. The chin is tucked slightly in toward the sternum. The toes are active and feet reach straight up toward the sky. The gaze is straight.',
         difficulty: 3,
         time: 15,
@@ -520,7 +512,7 @@ const tags = [
         difficulty: 2,
         time: 15,
         imageURL: 'https://pocketyoga.com/assets/images/full/lizard_L.png',
-        tags: newTags.filter(t => t.name === 'arm-support' || t.name === 'balance' || t.name === 'stretch-legs')
+        tags: newTags.filter(t => t.name === 'arm-support' || t.name === 'balance' || t.name ==='hip-opener' || t.name === 'stretch-legs')
       }, 
       { 
         name: 'Lizard (Flying)', 
@@ -568,8 +560,112 @@ const tags = [
         difficulty: 2,
         time: 15,
         imageURL: 'https://pocketyoga.com/assets/images/full/lotus_full.png',
-        tags: newTags.filter(t => t.name === 'core' || t.name === 'hip-opener' || t.name === 'seated')
+        tags: newTags.filter(t => t.name === 'hip-opener' || t.name === 'seated')
       }, 
+      { 
+        name: 'Lotus (Half)', 
+        description: 'Half lotus pose, or Ardha Padmasana in Sanskrit, is a seated pose that emphasizes posture. From a seated position, bend one knee and bring the ankle to the crease of the opposite hip so the sole of the foot faces the sky. Bend the other knee, and cross the ankle beneath the opposite knee. Place the hands on the thighs or knees and keep the spine straight.',
+        difficulty: 1,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/lotus_half.png',
+        tags: newTags.filter(t => t.name === 'hip-opener' || t.name === 'seated')
+      }, 
+      { 
+        name: 'Lunge', 
+        description: 'Lunge pose, or Utthita Ashwa Sanchalanasana in Sanskrit, is an arm supported pose. The weight of the body is supported on the front foot and the back toes. The front knee is bent directly above the ankle in a 90-degree angle to the ankle. The back heel is pressed to the back. The inner thighs scissor toward each other and the hips are squared. The ribcage is lifted and the heart is open. The fingertips straddle the front leg and rest softly on the earth for balance. You may use a block if necessary to keep the proper alignment. The gaze is down and slightly forward.',
+        difficulty: 1,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/lunge_L.png',
+        tags: newTags.filter(t => t.name === 'arm-support' || t.name === 'balance' || t.name === 'stretch-legs')
+      }, 
+      { 
+        name: 'Monkey (Crooked)', 
+        description: 'Crooked Monkey pose, or Vakra Hanumanasana in Sanskrit, is an arm supported, stretch pose. Begin in a low lunge with both hands on the inside of your front foot and bent knee. Drop your back knee to the ground, send it back further and hinge forward slightly to open your hip flexor. Pivot your top foot to the corner at about a 45-degree angle. Flex and firm up your top foot and ankle then allow your front bent knee to rotate outward. Ground your outside palm to the mat. Bend your back knee, reach around with your free hand to catch your foot or ankle and externally rotate your shoulder. Ensure the weight is on top of your knee and not directly on your knee cap. Allow your spine to twist and your chest to rotate upward, broadening your collar bone.',
+        difficulty: 2,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/crooked_monkey_R.png',
+        tags: newTags.filter(t => t.name === 'arm-support' || t.name === 'balance' || t.name === 'hip-opener' || t.name === 'kneeling' || t.name === 'stretch-legs')
+      }, 
+      { 
+        name: 'Moon Bird', 
+        description: 'Moon bird pose, or Eka Pada Shirshasana in Sanskrit, is an arm-balancing, stretch pose. Begin with your foot behind your head. Ground your palms by your hips. Press into your palms, straighten your arms and lift your hips off the ground. Extend through your straight leg and using your core, bring it to about 60 to 75 degrees from the ground towards your chin.',
+        difficulty: 3,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/foot_behind_head_elevated_R.png',
+        tags: newTags.filter(t => t.name === 'arm-balancing' || t.name === 'core' || t.name === 'hip-opener' || t.name === 'stretch-back' || t.name === 'stretch-legs')
+      }, 
+      { 
+        name: 'Mountain', 
+        description: 'Mountain pose, or Tadasana in Sanskrit, is a neutral standing pose. The body is in the standing position, with the feet together and rooted into the earth. The weight of the body is evenly distributed on the four corners of the feet. The pelvis is tucked. The ribcage is lifted. The neck is a natural extension of the spine and the chin is slightly tucked toward the sternum. The shoulders are relaxed as they rotate back and down. The arms at your sides. The gaze is forward.',
+        difficulty: 1,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/mountain_arms_side.png',
+        tags: newTags.filter(t => t.name === 'restorative' || t.name === 'standing' || t.name === 'warm-up')
+      }, 
+      { 
+        name: 'Peacock', 
+        description: 'Peacock pose, or Mayurasana in Sanskrit, is an arm-balancing pose. Begin in a kneeling position with the toes curled and knees wide. Bring your elbows close together in front of your ribs or upper belly, above the navel, forearms facing up. Lean forward and place both hands down to the ground with the fingertips facing back. Create a shelf for your body using your upper arms and send your chest forward. Walk your legs back slightly and begin to lift your knees off the ground. Knees can stay bent. Once you feel balanced, extend your legs straight back into the full variation of the pose.',
+        difficulty: 3,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/peacock.png',
+        tags: newTags.filter(t => t.name === 'arm-balancing' || t.name === 'core' || t.name === 'strength')
+      }, 
+      { 
+        name: 'Pendant', 
+        description: 'Pendant pose, or Lolasana in Sanskrit, is an arm-balancing pose. Begin in a seated position. Cross your shins and hinge forward. Place the left sole of your foot beneath your right buttock and the right sole of your foot beneath your left buttock so that your right shin is in front of your left calf. Place your palms on the ground slightly in front of your hips, engage your core and lift up. Keep your thighs close to your chest, straighten your arms and point your toes.',
+        difficulty: 2,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/pendant.png',
+        tags: newTags.filter(t => t.name === 'arm-balancing' || t.name === 'core' || t.name === 'strength')
+      }, 
+      { 
+        name: 'Pigeon', 
+        description: 'Pigeon pose, or Kapotasana in Sanskrit, is an advanced suppine stretching pose. The body is in an arched supine position with the hips and the ribcage lifted, the knees and the elbows are bent, the forearms and the shins are supporting the weight of the body and the crown of the head is softly resting on the earth. The palms are either resting on the feet or are hooked around the heels (depending on flexibility). The weight of the body is distributed equally between the forearms and the shins as the pelvis presses up and the ribcage lifts. The tailbone lengthens toward the knees and the sternum lifts up in the opposite direction creating a gentle arch in the back of the body. The gaze is out in front or down to the earth, depending on flexibility.',
+        difficulty: 2,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/pigeon.png',
+        tags: newTags.filter(t => t.name === 'arm-support' || t.name === 'kneeling' || t.name === 'stretch-arms' || t.name === 'stretch-core' || t.name === 'stretch-legs' || t.name === 'supine')
+      }, 
+      { 
+        name: 'Pigeon (Flying)', 
+        description: 'Flying pigeon pose, or Eka Pada Galavasana in Sanskrit, is an arm-balancing pose. Begin in tree with arms up pose, standing on one leg. Release the foot from the inner thigh and place the ankle above the opposite knee. Bend the standing knee and fold forward, bringing the palms to the floor. Bend the elbows to about 90 degrees and hook the toes of the foot on the opposite upper arm. Bring the weight of the body forward as the standing foot comes off. Start to straighten the leg behind.',
+        difficulty: 3,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/pigeon_flying_L.png',
+        tags: newTags.filter(t => t.name === 'arm-balance' || t.name === 'core' || t.name === 'strength' || t.name === 'stretch-hips')
+      },
+      { 
+        name: 'Pigeon (Half)', 
+        description: 'Half pigeon pose, or Ardha Kapotasana in Sanskrit, is a kneeling lunge-like posture. From a lounging position, the hips are parallel and squared to the earth with the front knee bent in a 90-degree angle and flat on the earth. The front foot rests close to the groin. The back leg is extended with the knee and the back foot squared, parallel and pressed firmly into the earth. The ribcage is lifted. The heart is open. Fingers rest on the earth by the side body. The gaze is forward.',
+        difficulty: 1,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/pigeon_half_L.png',
+        tags: newTags.filter(t => t.name === 'seated' || t.name === 'core' || t.name === 'hip-opener')
+      },
+      { 
+        name: 'Plank', 
+        description: 'Plank pose, or Phalakasana in Sanskrit, is an arm-supported pose. The body is parallel to the earth. The weight of the body is supported by straight arms and active toes. The abdomen is pulled up toward the spine and the pelvis is tucked in. The neck is a natural extension of the spine and the chin is slightly tucked. The palms are flat and the elbows are close to the side body. The joints are stacked with the wrists, elbows and shoulders in a straight line perpendicular to the earth. The gaze follows the spine and the eyes are focused down.',
+        difficulty: 2,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/plank.png',
+        tags: newTags.filter(t => t.name === 'arm-support' || t.name === 'core' || t.name === 'strength')
+      },
+      { 
+        name: 'Plank (Reversed)', 
+        description: 'Reversed plank pose, or Purvottanasana in Sanskrit, is a supine arm-supported pose. From a seated position place the hands on the floor about one foot behind the hips with the fingertips pointed forward toward the hips. On an inhale press through the hands and feet to lift the hips as high as possible. Keep the inner line of the feet together and seal them into the mat as much as possible. Relax the head back and gaze at the tip of your nose.',
+        difficulty: 1,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/plank_upward.png',
+        tags: newTags.filter(t => t.name === 'arm-support' || t.name === 'core' || t.name === 'strength' || t.name === 'supine')
+      },
+      { 
+        name: 'Plow', 
+        description: 'Plow pose, or Halasana in Sanskrit, is a supine arm-supported pose. From a supine position, the upper back rests on the earth with the hips and legs revolved back over the torso above and beyond the head toward the earth. The torso is perpendicular to the earth. The legs are fully extended with no bend at the knees as the toes reach for the earth. The hands are either supporting the lower back or extended behind the back on the earth with extended elbows and fingers interlaced (as flexibility allows), opening the shoulders. The neck is straight. The chin tucked. Do not look to the side as this may injure the neck. The is gaze inward.',
+        difficulty: 2,
+        time: 15,
+        imageURL: 'https://pocketyoga.com/assets/images/full/plow.png',
+        tags: newTags.filter(t => t.name === 'arm-support' || t.name === 'core' || t.name === 'stretch-back' || t.name === 'stretch-legs' || t.name === 'supine')
+      },
       { 
         name: 'Table', 
         description: 'Table pose, or Chakravakasana in Sanskrit, is a neutral kneeling posture. From a kneeling position, the knees and arms form a box with the spine and neck in a neutral position. The hips and shoulders are squared to the earth and the palms are rooted with the weight of the body equally distributed between the heel of the hands and the top of the knees. The joints are stacked with the wrists, elbows and shoulders in a straight line. The gaze is down.',
