@@ -7,14 +7,15 @@ const routineSchema = new Schema({
         type: String,
         required: true
     },
-    time: {
-        type: Number,
-        required: true
-    },
     poses:[{
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Pose'
-    }]
+    }],
+    user:{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User'
+    },
+
 })
 
 const Routine = mongoose.model('Routine', routineSchema);
