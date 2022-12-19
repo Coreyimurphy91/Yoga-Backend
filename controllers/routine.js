@@ -43,6 +43,22 @@ router.get('/:id', passport.authenticate('jwt', { session: false }), async (req,
         });
 });
 
+router.post('/', passport.authenticate('jwt', { session: false }), async (req, res) => {
+    const { name } = req.body;
+    Routine.create({
+        user: req.user,
+        name: name,
+    })
+        .then(routine => {
+            console.log('New Routine >>>', routine);
+            res.json({ message: 'success' });
+        })
+        .catch(error => {
+            console.log('error', error)
+            res.json({ message: "Error occurred, please try again" });
+        });
+});
+
 router.put('/:id', passport.authenticate('jwt', { session: false }), async (req, res) => {
 
     //put
@@ -61,29 +77,32 @@ router.put('/:id', passport.authenticate('jwt', { session: false }), async (req,
     console.log('=====> req.params', req.params); // object used for finding example by id
     console.log('=====> req.body', req.body); // object used for updating example
 
-    Example.findByIdAndUpdate(req.params.id, req.body, { new: true })
-        .then(updatedExample => {
-            console.log('Example updated', updatedExample);
-            res.redirect(`/examples/${req.params.id}`);
-        })
-        .catch(err => {
-            console.log('Error in example#update:', err);
-            res.json({ message: 'Error occured... Please try again.' });
-        });
+    // Example.findByIdAndUpdate(req.params.id, req.body, { new: true })
+    //     .then(updatedExample => {
+    //         console.log('Example updated', updatedExample);
+    //         res.redirect(`/examples/${req.params.id}`);
+    //     })
+    //     .catch(err => {
+    //         console.log('Error in example#update:', err);
+    //         res.json({ message: 'Error occured... Please try again.' });
+    //     });
 });
 
-router.post('/', passport.authenticate('jwt', { session: false }), async (req, res) => {
-    const { name } = req.body;
-    Routine.create({
-        user: req.user,
-        name: name,
+router.delete('/:id', passport.authenticate('jwt', { session: false }), (req, res) => {
+    // Purpose: Update one routine in the DB, and return
+    console.log('=====> Inside DELETE /routines/:id');
+    console.log('=====> req.params');
+    console.log(req.params); // object used for finding routine by id
+    
+    Routine.findByIdAndRemove(req.params.id)
+    .then(response => {
+        console.log(`Routine ${req.params.id} was deleted`, response);
+        res.redirect(`/routines`);
     })
-        .then(routine => {
-            console.log('New Routine >>>', routine);
-            res.json({ message: 'success' });
-        })
-        .catch(error => {
-            console.log('error', error)
-            res.json({ message: "Error occurred, please try again" });
-        });
+    .catch(err => {
+        console.log('Error in routine#delete:', err);
+        res.json({ message: 'Error occured... Please try again.'});
+    });
 });
+
+module.exports = router;
