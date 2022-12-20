@@ -34,6 +34,7 @@ router.get('/:id', passport.authenticate('jwt', { session: false }), async (req,
     // Purpose: Fetch one routine from DB and return
     console.log('=====> Inside GET /routines/:id');
     Routine.findById(req.params.id)
+        .populate('poses')
         .then(routine => {
             res.json({ routine: routine });
         })
@@ -64,18 +65,19 @@ router.put('/:id', passport.authenticate('jwt', { session: false }), async (req,
     //put
     const { poseId, action } = req.body;
     const routine = await Routine.findById(req.params.id)
-    if (action === 'add') {
+    if (action === 'add' && poseId !== null) {
         const pose = await Pose.findById(poseId);
         routine.poses.push(pose)
     } else {
-        routine.poses = routine.poses.filter( pose => pose._id !== poseId)
+        routine.poses = routine.poses.filter( pose => pose.toString() !== poseId)
     }
     routine.save();
     //put
     // Purpose: Update one example in the DB, and return
-    console.log('=====> Inside PUT /examples/:id');
+    console.log('=====> Inside PUT /routine/:id');
     console.log('=====> req.params', req.params); // object used for finding example by id
     console.log('=====> req.body', req.body); // object used for updating example
+    res.json({ message: 'pose added' });
 
     // Example.findByIdAndUpdate(req.params.id, req.body, { new: true })
     //     .then(updatedExample => {
